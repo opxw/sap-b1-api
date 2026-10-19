@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.10" />
+    <PackageReference Include="Microsoft.OpenApi" Version="2.11.0" />
+    <PackageReference Include="Opx.Api.Web" Version="1.0.20" />
+    <ProjectReference Include="..\dto\SapB1.Dto.csproj" />
+    <ProjectReference Include="..\services\SapB1.Service.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\shared\SapB1.Shared.Db\catalog.generated.json"
+             Link="catalog.generated.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
+

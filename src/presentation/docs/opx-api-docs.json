@@ -1,0 +1,1168 @@
+﻿{
+  "GeneratedAt": "2026-10-05T09:52:13.3973402+07:00",
+  "Endpoints": [
+    {
+      "Controller": "AdministrationTables",
+      "Action": "Tables",
+      "Method": "GET",
+      "Route": "/api/v1/administration/tables",
+      "Parameters": [],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "AdministrationTables",
+      "Action": "Table",
+      "Method": "GET",
+      "Route": "/api/v1/administration/tables/{code}",
+      "Parameters": [
+        {
+          "Name": "code",
+          "Source": "Path",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "AdministrationTables",
+      "Action": "Rows",
+      "Method": "GET",
+      "Route": "/api/v1/administration/tables/{code}/rows",
+      "Parameters": [
+        {
+          "Name": "code",
+          "Source": "Path",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        },
+        {
+          "Name": "skip",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        },
+        {
+          "Name": "take",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        },
+        {
+          "Name": "cancellationToken",
+          "Source": "Special",
+          "Type": "CancellationToken",
+          "Required": true,
+          "Properties": [
+            {
+              "Name": "IsCancellationRequested",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "CanBeCanceled",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "WaitHandle",
+              "Type": "WaitHandle"
+            }
+          ]
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "BankingTables",
+      "Action": "Tables",
+      "Method": "GET",
+      "Route": "/api/v1/banking/tables",
+      "Parameters": [],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "BankingTables",
+      "Action": "Table",
+      "Method": "GET",
+      "Route": "/api/v1/banking/tables/{code}",
+      "Parameters": [
+        {
+          "Name": "code",
+          "Source": "Path",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "BankingTables",
+      "Action": "Rows",
+      "Method": "GET",
+      "Route": "/api/v1/banking/tables/{code}/rows",
+      "Parameters": [
+        {
+          "Name": "code",
+          "Source": "Path",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        },
+        {
+          "Name": "skip",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        },
+        {
+          "Name": "take",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        },
+        {
+          "Name": "cancellationToken",
+          "Source": "Special",
+          "Type": "CancellationToken",
+          "Required": true,
+          "Properties": [
+            {
+              "Name": "IsCancellationRequested",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "CanBeCanceled",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "WaitHandle",
+              "Type": "WaitHandle"
+            }
+          ]
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "BusinessPartnersTables",
+      "Action": "Tables",
+      "Method": "GET",
+      "Route": "/api/v1/business-partners/tables",
+      "Parameters": [],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "BusinessPartnersTables",
+      "Action": "Table",
+      "Method": "GET",
+      "Route": "/api/v1/business-partners/tables/{code}",
+      "Parameters": [
+        {
+          "Name": "code",
+          "Source": "Path",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "BusinessPartnersTables",
+      "Action": "Rows",
+      "Method": "GET",
+      "Route": "/api/v1/business-partners/tables/{code}/rows",
+      "Parameters": [
+        {
+          "Name": "code",
+          "Source": "Path",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        },
+        {
+          "Name": "skip",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        },
+        {
+          "Name": "take",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        },
+        {
+          "Name": "cancellationToken",
+          "Source": "Special",
+          "Type": "CancellationToken",
+          "Required": true,
+          "Properties": [
+            {
+              "Name": "IsCancellationRequested",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "CanBeCanceled",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "WaitHandle",
+              "Type": "WaitHandle"
+            }
+          ]
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "Catalog",
+      "Action": "Domains",
+      "Method": "GET",
+      "Route": "/api/v1/catalog/domains",
+      "Parameters": [],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "FinanceTables",
+      "Action": "Tables",
+      "Method": "GET",
+      "Route": "/api/v1/finance/tables",
+      "Parameters": [],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "FinanceTables",
+      "Action": "Table",
+      "Method": "GET",
+      "Route": "/api/v1/finance/tables/{code}",
+      "Parameters": [
+        {
+          "Name": "code",
+          "Source": "Path",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "FinanceTables",
+      "Action": "Rows",
+      "Method": "GET",
+      "Route": "/api/v1/finance/tables/{code}/rows",
+      "Parameters": [
+        {
+          "Name": "code",
+          "Source": "Path",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        },
+        {
+          "Name": "skip",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        },
+        {
+          "Name": "take",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        },
+        {
+          "Name": "cancellationToken",
+          "Source": "Special",
+          "Type": "CancellationToken",
+          "Required": true,
+          "Properties": [
+            {
+              "Name": "IsCancellationRequested",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "CanBeCanceled",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "WaitHandle",
+              "Type": "WaitHandle"
+            }
+          ]
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "HumanResourcesTables",
+      "Action": "Tables",
+      "Method": "GET",
+      "Route": "/api/v1/human-resources/tables",
+      "Parameters": [],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "HumanResourcesTables",
+      "Action": "Table",
+      "Method": "GET",
+      "Route": "/api/v1/human-resources/tables/{code}",
+      "Parameters": [
+        {
+          "Name": "code",
+          "Source": "Path",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "HumanResourcesTables",
+      "Action": "Rows",
+      "Method": "GET",
+      "Route": "/api/v1/human-resources/tables/{code}/rows",
+      "Parameters": [
+        {
+          "Name": "code",
+          "Source": "Path",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        },
+        {
+          "Name": "skip",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        },
+        {
+          "Name": "take",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        },
+        {
+          "Name": "cancellationToken",
+          "Source": "Special",
+          "Type": "CancellationToken",
+          "Required": true,
+          "Properties": [
+            {
+              "Name": "IsCancellationRequested",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "CanBeCanceled",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "WaitHandle",
+              "Type": "WaitHandle"
+            }
+          ]
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "InventoryAndProductionTables",
+      "Action": "Tables",
+      "Method": "GET",
+      "Route": "/api/v1/inventory-and-production/tables",
+      "Parameters": [],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "InventoryAndProductionTables",
+      "Action": "Table",
+      "Method": "GET",
+      "Route": "/api/v1/inventory-and-production/tables/{code}",
+      "Parameters": [
+        {
+          "Name": "code",
+          "Source": "Path",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "InventoryAndProductionTables",
+      "Action": "Rows",
+      "Method": "GET",
+      "Route": "/api/v1/inventory-and-production/tables/{code}/rows",
+      "Parameters": [
+        {
+          "Name": "code",
+          "Source": "Path",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        },
+        {
+          "Name": "skip",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        },
+        {
+          "Name": "take",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        },
+        {
+          "Name": "cancellationToken",
+          "Source": "Special",
+          "Type": "CancellationToken",
+          "Required": true,
+          "Properties": [
+            {
+              "Name": "IsCancellationRequested",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "CanBeCanceled",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "WaitHandle",
+              "Type": "WaitHandle"
+            }
+          ]
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "MarketingDocumentsAndReceiptsTables",
+      "Action": "Tables",
+      "Method": "GET",
+      "Route": "/api/v1/marketing-documents-and-receipts/tables",
+      "Parameters": [],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "MarketingDocumentsAndReceiptsTables",
+      "Action": "Table",
+      "Method": "GET",
+      "Route": "/api/v1/marketing-documents-and-receipts/tables/{code}",
+      "Parameters": [
+        {
+          "Name": "code",
+          "Source": "Path",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "MarketingDocumentsAndReceiptsTables",
+      "Action": "Rows",
+      "Method": "GET",
+      "Route": "/api/v1/marketing-documents-and-receipts/tables/{code}/rows",
+      "Parameters": [
+        {
+          "Name": "code",
+          "Source": "Path",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        },
+        {
+          "Name": "skip",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        },
+        {
+          "Name": "take",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        },
+        {
+          "Name": "cancellationToken",
+          "Source": "Special",
+          "Type": "CancellationToken",
+          "Required": true,
+          "Properties": [
+            {
+              "Name": "IsCancellationRequested",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "CanBeCanceled",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "WaitHandle",
+              "Type": "WaitHandle"
+            }
+          ]
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "MrpTables",
+      "Action": "Tables",
+      "Method": "GET",
+      "Route": "/api/v1/mrp/tables",
+      "Parameters": [],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "MrpTables",
+      "Action": "Table",
+      "Method": "GET",
+      "Route": "/api/v1/mrp/tables/{code}",
+      "Parameters": [
+        {
+          "Name": "code",
+          "Source": "Path",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "MrpTables",
+      "Action": "Rows",
+      "Method": "GET",
+      "Route": "/api/v1/mrp/tables/{code}/rows",
+      "Parameters": [
+        {
+          "Name": "code",
+          "Source": "Path",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        },
+        {
+          "Name": "skip",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        },
+        {
+          "Name": "take",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        },
+        {
+          "Name": "cancellationToken",
+          "Source": "Special",
+          "Type": "CancellationToken",
+          "Required": true,
+          "Properties": [
+            {
+              "Name": "IsCancellationRequested",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "CanBeCanceled",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "WaitHandle",
+              "Type": "WaitHandle"
+            }
+          ]
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "OpxLogs",
+      "Action": "Access",
+      "Method": "GET",
+      "Route": "/opx/logs/access",
+      "Parameters": [
+        {
+          "Name": "date",
+          "Source": "Query",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        },
+        {
+          "Name": "take",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "OpxLogs",
+      "Action": "SecurityIssues",
+      "Method": "GET",
+      "Route": "/opx/logs/security-issues",
+      "Parameters": [
+        {
+          "Name": "date",
+          "Source": "Query",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        },
+        {
+          "Name": "take",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "OpxProtection",
+      "Action": "Health",
+      "Method": "GET",
+      "Route": "/opx/protection/health",
+      "Parameters": [],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "OpxProtection",
+      "Action": "Metrics",
+      "Method": "GET",
+      "Route": "/opx/protection/metrics",
+      "Parameters": [],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "OthersTables",
+      "Action": "Tables",
+      "Method": "GET",
+      "Route": "/api/v1/others/tables",
+      "Parameters": [],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "OthersTables",
+      "Action": "Table",
+      "Method": "GET",
+      "Route": "/api/v1/others/tables/{code}",
+      "Parameters": [
+        {
+          "Name": "code",
+          "Source": "Path",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "OthersTables",
+      "Action": "Rows",
+      "Method": "GET",
+      "Route": "/api/v1/others/tables/{code}/rows",
+      "Parameters": [
+        {
+          "Name": "code",
+          "Source": "Path",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        },
+        {
+          "Name": "skip",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        },
+        {
+          "Name": "take",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        },
+        {
+          "Name": "cancellationToken",
+          "Source": "Special",
+          "Type": "CancellationToken",
+          "Required": true,
+          "Properties": [
+            {
+              "Name": "IsCancellationRequested",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "CanBeCanceled",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "WaitHandle",
+              "Type": "WaitHandle"
+            }
+          ]
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "ReportsTables",
+      "Action": "Tables",
+      "Method": "GET",
+      "Route": "/api/v1/reports/tables",
+      "Parameters": [],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "ReportsTables",
+      "Action": "Table",
+      "Method": "GET",
+      "Route": "/api/v1/reports/tables/{code}",
+      "Parameters": [
+        {
+          "Name": "code",
+          "Source": "Path",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "ReportsTables",
+      "Action": "Rows",
+      "Method": "GET",
+      "Route": "/api/v1/reports/tables/{code}/rows",
+      "Parameters": [
+        {
+          "Name": "code",
+          "Source": "Path",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        },
+        {
+          "Name": "skip",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        },
+        {
+          "Name": "take",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        },
+        {
+          "Name": "cancellationToken",
+          "Source": "Special",
+          "Type": "CancellationToken",
+          "Required": true,
+          "Properties": [
+            {
+              "Name": "IsCancellationRequested",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "CanBeCanceled",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "WaitHandle",
+              "Type": "WaitHandle"
+            }
+          ]
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "SalesOpportunitiesTables",
+      "Action": "Tables",
+      "Method": "GET",
+      "Route": "/api/v1/sales-opportunities/tables",
+      "Parameters": [],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "SalesOpportunitiesTables",
+      "Action": "Table",
+      "Method": "GET",
+      "Route": "/api/v1/sales-opportunities/tables/{code}",
+      "Parameters": [
+        {
+          "Name": "code",
+          "Source": "Path",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "SalesOpportunitiesTables",
+      "Action": "Rows",
+      "Method": "GET",
+      "Route": "/api/v1/sales-opportunities/tables/{code}/rows",
+      "Parameters": [
+        {
+          "Name": "code",
+          "Source": "Path",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        },
+        {
+          "Name": "skip",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        },
+        {
+          "Name": "take",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        },
+        {
+          "Name": "cancellationToken",
+          "Source": "Special",
+          "Type": "CancellationToken",
+          "Required": true,
+          "Properties": [
+            {
+              "Name": "IsCancellationRequested",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "CanBeCanceled",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "WaitHandle",
+              "Type": "WaitHandle"
+            }
+          ]
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "ServiceTables",
+      "Action": "Tables",
+      "Method": "GET",
+      "Route": "/api/v1/service/tables",
+      "Parameters": [],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "ServiceTables",
+      "Action": "Table",
+      "Method": "GET",
+      "Route": "/api/v1/service/tables/{code}",
+      "Parameters": [
+        {
+          "Name": "code",
+          "Source": "Path",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    },
+    {
+      "Controller": "ServiceTables",
+      "Action": "Rows",
+      "Method": "GET",
+      "Route": "/api/v1/service/tables/{code}/rows",
+      "Parameters": [
+        {
+          "Name": "code",
+          "Source": "Path",
+          "Type": "String",
+          "Required": false,
+          "Properties": []
+        },
+        {
+          "Name": "skip",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        },
+        {
+          "Name": "take",
+          "Source": "Query",
+          "Type": "Int32",
+          "Required": true,
+          "Properties": []
+        },
+        {
+          "Name": "cancellationToken",
+          "Source": "Special",
+          "Type": "CancellationToken",
+          "Required": true,
+          "Properties": [
+            {
+              "Name": "IsCancellationRequested",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "CanBeCanceled",
+              "Type": "Boolean"
+            },
+            {
+              "Name": "WaitHandle",
+              "Type": "WaitHandle"
+            }
+          ]
+        }
+      ],
+      "Output": [
+        {
+          "StatusCode": 200,
+          "Type": "void"
+        }
+      ]
+    }
+  ]
+}
